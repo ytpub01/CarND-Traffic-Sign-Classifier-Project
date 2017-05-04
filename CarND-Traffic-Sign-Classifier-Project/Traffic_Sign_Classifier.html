@@ -13383,8 +13383,7 @@ Fully connected     output layer, outputs 43</p>
 </ol>
 <p>To train the model, I used an AdamOptimizer with the default learning rate of 0.001, a batch size of 128, and 10 epochs.</p>
 <ol>
-<li>Approach for solution
-#and getting the validation set accuracy to be at least 0.93. Include in the discussion the results on the training, validation and test sets and where in the code these were calculated. Your approach may have been an iterative process, in which case, outline the steps you took to get to the final solution and why you chose those steps. Perhaps your solution involved an already well known implementation or architecture. In this case, discuss why you think the architecture is suitable for the current problem.</li>
+<li>Approach for solution</li>
 </ol>
 <p>I used the LeNet implementation, scaling it up to use RGB images.</p>
 <p>My final model results were:</p>
@@ -13392,16 +13391,17 @@ Fully connected     output layer, outputs 43</p>
 <pre><code>validation set accuracy of 0.951
 test set accuracy of 0.933
 
-The architecture I tried was LeNet and I chose it because it solves a similar image classification problem.
-Some problems with the initial architecture where in the decision of whether there too many dense layers.
-The architecture was minimally adjusted to accomodate RGB images. A high accuracy on the validation set was obtained.
-I used the standard parameterswith no adjustment. A convolution layer worked well with this problem because image
-features classified by scaling up from detailed features into overall features is a very well-adapted technique for
-image classification that is implemented with convolutional layers.
+The architecture I tried was LeNet and I chose it because it solves a similar image classification
+problem. Some problems with the initial architecture where in the decision of whether there too
+many dense layers. The architecture was minimally adjusted to accomodate RGB images. A high
+accuracy on the validation set was obtained. I used the standard parameterswith no adjustment.
+A convolution layer worked well with this problem because image features classified by scaling
+up from detailed features into overall features is a very well-adapted technique for image
+classification that is implemented with convolutional layers.
 
-The Le Net architecture was relevant to the traffic sign application because it was successful with the MNIST
-database of images.The final model's accuracy on the validation and test set where comparably on the 95% level which
-means they are accurate.
+The LeNet architecture was relevant to the traffic sign application because it was successful
+with the MNIST database of images. My final model's accuracy on the validation and test set
+was in the 93% - 95% range.
 
 </code></pre>
 <p>Test a Model on New Images</p>
